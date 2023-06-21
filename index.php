@@ -10,7 +10,6 @@
 <html>
   <head>
     <title>Cas pratique</title>
-  </head>
   <body>
  <h1>Formulaire</h1>
     <form method = "post">
@@ -24,3 +23,6 @@
     
   </body>
 </html>
+<?php 
+echo $date = date("Y-m-d") ;
+?>
