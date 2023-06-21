@@ -24,5 +24,30 @@
   </body>
 </html>
 <?php 
-echo $date = date("Y-m-d") ;
+echo $date = date("Y-m-d")."<br>";// affiche 2023-06-21 format date
+echo $date = date("h:i:s")."<br>";//affiche 09:58:48 format heure
+echo $date = date("d l F Y")."<br>";// affiche 21 Wednesday JUne 2023 format
+
+// le  timestamp:
+echo "La date d'aujourd'hui au format timestamp : ".time()."<br>";
+// la date au format  GMT :
+echo "La date d'aujourd'hui au format GMT :".gmdate("d/m/Y")."<br><br>";
+echo print_r(getdate())."<br>";
+
+
+// AJouter cdes jours ou des mois :
+// On utilise les methodes date() et strtotime()
+
+$date = "2023-03-27" ;
+echo date('Y-m-d' ,strtotime($date.' + 1 days'))."|"."<br>";
+echo date('Y-m-d' ,strtotime($date.' + 1 months'))."|"."<br>";
+echo date('Y-m-d' ,strtotime($date.' + 10 months'))."|"."<br>";
+
+
+
+
+
+
+
+
 ?>
